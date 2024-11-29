@@ -1,0 +1,21 @@
+meta {
+  name: Store Basket
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{basket_url}}/basket
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "Cart": {
+      "UserName": "red",
+      "Items": [],
+      "TotalPrice": 0
+    }
+  }
+}
